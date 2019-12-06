@@ -51,27 +51,27 @@ function touchStarted() {
     var centrov = windowWidth/2;
     var centroh = windowHeight/2;
     //texto haikai
-    textSize(40);
+    textSize(80);
     textStyle(BOLD);
     textAlign(CENTER);
     textFont(myFont);
     background(195,82,37);
     fill(r,g,b,255);
     text(linha1, centrov, centroh-50);
-    fill(r,g,b,200);
+    fill(r,g,b,175);
     text(linha2, centrov, centroh);
-    fill(r,g,b,150);
+    fill(r,g,b,100);
     text(linha3, centrov, centroh+50);
     //texto autores
     textFont(myFonttitulo);
-    textSize(12);
+    textSize(10);
     fill(228,253,225,100);
     text("verso de autoria de "+autor1, centrov, windowHeight-50-15-15);
     text("verso de autoria de "+autor2, centrov, windowHeight-50-15);
     text("verso de autoria de "+autor3, centrov, windowHeight-50);
     //texto titulo
     textFont(myFonttitulo);
-    textSize(12);
+    textSize(10);
     fill(228,253,225,100);
     text("S E U  H A I K A I   nº "+round(catalogo), centrov, 50);
 }
