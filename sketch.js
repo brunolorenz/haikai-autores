@@ -1,12 +1,12 @@
 var letra1;
 var letra2;
 var letra3;
-var r = 89;
-var g = 76;
-var b = 41;
+var r = 114;
+var g = 11;
+var b = 99;
 function preload () {
-  myFont = loadFont('assets/Lora-Italic.ttf')
-  myFonttitulo = loadFont('assets/BreeSerif-Regular.ttf')
+  myFont = loadFont('assets/Solway-ExtraBold.ttf')
+  myFonttitulo = loadFont('assets/Solway-Bold.ttf')
   frase1 = loadStrings("frases1.txt");
   frase2 = loadStrings("frases2.txt");
   frase3 = loadStrings("frases3.txt");
@@ -23,9 +23,9 @@ function setup() {
 }
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
-  background(255,253,234);
+  background(195,82,37);
   textFont(myFont);
-  fill(31,31,122,100);
+  fill(195,82,37,100);
   textSize(20);
   textAlign(CENTER);
   text("clique na tela",windowWidth/2,windowHeight/2);
@@ -55,7 +55,7 @@ function touchStarted() {
     textStyle(BOLD);
     textAlign(CENTER);
     textFont(myFont);
-    background(255,253,234);
+    background(195,82,37);
     fill(r,g,b,255);
     text(linha1, centrov, centroh-50);
     fill(r,g,b,200);
@@ -65,14 +65,14 @@ function touchStarted() {
     //texto autores
     textFont(myFonttitulo);
     textSize(12);
-    fill(31,31,31,100);
+    fill(228,253,225,100);
     text("verso de autoria de "+autor1, centrov, windowHeight-50-15-15);
     text("verso de autoria de "+autor2, centrov, windowHeight-50-15);
     text("verso de autoria de "+autor3, centrov, windowHeight-50);
     //texto titulo
     textFont(myFonttitulo);
     textSize(12);
-    fill(31,31,31,150);
+    fill(228,253,225,100);
     text("S E U  H A I K A I   nº "+round(catalogo), centrov, 50);
 }
 function keyReleased() {
