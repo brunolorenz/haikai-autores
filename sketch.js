@@ -51,7 +51,7 @@ function touchStarted() {
     var centrov = windowWidth/2;
     var centroh = windowHeight/2;
     //texto haikai
-    textSize(80);
+    textSize(50);
     textStyle(BOLD);
     textAlign(CENTER);
     textFont(myFont);
